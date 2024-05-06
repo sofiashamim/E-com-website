@@ -1,0 +1,10 @@
+.Li{
+
+}
+
+.Li:hover{
+    background-color: rgb(62, 197, 62);
+    cursor: pointer;
+    transition: ease-in 0.5s;
+
+}
