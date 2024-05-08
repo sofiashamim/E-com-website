@@ -10,6 +10,7 @@ import Signup from './pages/Signup';
 import Trial from './pages/Trial';
 import AuthContext from './context/AuthContext';
 import { useContext } from 'react';
+import Singlepage from './pages/Singlepage';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       {ctx.AuthValue  && <Route path='/login'  element={<Navigate to={'/'}/>}/>}
 
       <Route path='/signup' element={<Signup/>}/>
+      <Route path='/singlepage' element={<Singlepage />}/>
       
      </Routes>
      </BrowserRouter>

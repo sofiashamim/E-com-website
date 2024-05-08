@@ -101,6 +101,7 @@ console.log(filteredItem)
   <div className="card-body">
     <h5 className="card-title text-truncate">{ele.title}</h5>
     <p className="card-text">Price={ele.price}</p>
+    <Link to="/singlepage" state={ele} id="viewnewsbtn" className="btn btn-primary ">View Recipe</Link>
     <Link to="#" onClick={()=>{handleAddToCart(ele)}} className="btn btn-primary">Add to cart</Link>
   </div>
 </div>
