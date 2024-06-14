@@ -8,5 +8,14 @@
 }
 
 #navbarId{
-    background-color: grey;
+    background-image: linear-gradient( to right, violet,white,violet);
+    box-shadow: 0 0 20px black;
+    
+}
+#sidebar{
+    background-image: linear-gradient(rgb(24, 136, 248),rgb(247, 103, 232),rgb(244, 244, 114),rgb(251, 120, 177));
+}
+
+#loginbtn{
+    margin-right: 10px;
 }

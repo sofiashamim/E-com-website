@@ -35,9 +35,9 @@ navigate("/login")
   return (
     <div>
 
-<nav id='navbarId' className="navbar navbar-expand-lg bg-body-tertiary">
-  <div className="container-fluid">
-    <Link className="navbar-brand" href="#">Navbar</Link>
+<nav id='navbarId' className="navbar navbar-expand-lg  ">
+  <div  className="container-fluid">
+    <Link className="navbar-brand" href="#">Shop Savvy</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>

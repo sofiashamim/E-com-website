@@ -86,8 +86,8 @@ console.log(filteredItem)
 
   return (
     <div className='row bg-dark'>
-      <div className='col-2 bg-success'>
-      <h3 className='mt-3 '>Categories</h3>
+      <div id='sidebar' className='col-2 '>
+      <h3 className='mt-3 '>CATEGORIES</h3>
       <ul class="list-group">
   {categories.map((ele)=>{
     return<li onClick={()=>handleLiClick(ele)} class="list-group-item Li">{ele}</li>
