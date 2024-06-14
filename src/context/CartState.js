@@ -10,8 +10,15 @@ const CartState = (props) => {
 
     const addToCart=(obj)=>{
         console.log(obj)
-        setcartItem([...cartItem,obj])
-        console.log(cartItem)
+        // setcartItem([...cartItem,obj])
+        // console.log(cartItem)
+        let itemExists =cartItem.find((ele)=>ele.id===obj.id)
+        console.log(itemExists)
+        if (!itemExists) {
+          // ctx.
+          setcartItem([...cartItem,obj])
+          
+        }
 
     }
 
@@ -42,8 +49,8 @@ const CartState = (props) => {
     const decrementQuantity=(ans)=>{
       let updatedObj={
         ...ans,
-        quantity:ans.quantity-1,
-        price:ans.price+ans.price/ans.quantity
+        quantity:ans.quantity>1?ans.quantity-1 :ans.quantity,
+        price:ans.quantity>1?ans.price-ans.price/ans.quantity :ans.price
       }
       console.log(updatedObj)
 

@@ -81,12 +81,13 @@ console.log(filteredItem)
     }
   }
 
-
+// context provide away to provide data through the component tree without having to pass props down manually at every child
+// context api in react allow you to share data between components without passinf props through every level/child of the component tree it provides a way for components to access data that is global to the component tree
 
   return (
     <div className='row bg-dark'>
-      <div className='col-2 bg-warning'>
-      <h3 className='mt-3'>Categories</h3>
+      <div className='col-2 bg-success'>
+      <h3 className='mt-3 '>Categories</h3>
       <ul class="list-group">
   {categories.map((ele)=>{
     return<li onClick={()=>handleLiClick(ele)} class="list-group-item Li">{ele}</li>

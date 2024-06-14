@@ -13,7 +13,9 @@ const Navbar = () => {
 
     const handleInputChange=(e)=>{
       console.log(e.target.value)
-      ctx.setNavsearch(e.target.value)
+      let searchproduct= e.target.value.toLowerCase()
+      // ctx.setNavsearch(e.target.value)
+      ctx.setNavsearch(searchproduct)
     }
 
     const handleLogin=()=>{
@@ -33,7 +35,7 @@ navigate("/login")
   return (
     <div>
 
-<nav className="navbar navbar-expand-lg bg-body-tertiary">
+<nav id='navbarId' className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
     <Link className="navbar-brand" href="#">Navbar</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +54,7 @@ navigate("/login")
           <Link className="nav-link active" aria-current="page" to="/">Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/cart"> <BsCart4/>{ctx.cartItem.length}</Link>
+          <Link className="nav-link" to="/cart"> <BsCart4 size={"20px"}/>{ctx.cartItem.length?ctx.cartItem.length:""}</Link>
         </li>
        
        
